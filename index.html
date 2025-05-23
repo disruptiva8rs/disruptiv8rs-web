@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disruptivators</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #e0f2f7; /* Light blue background as in the image */
+            color: #333;
+        }
+        .header-section {
+            text-align: center;
+            padding: 40px 20px 20px;
+            background-color: #e0f2f7; /* Light blue background as in the image */
+            border-bottom: 1px solid #ccc; /* Subtle separator */
+        }
+        .header-section h1 {
+            font-size: 3em;
+            color: #333; /* Dark gray for the main title */
+            margin-bottom: 5px;
+        }
+        .header-section p {
+            font-size: 1.2em;
+            color: #666; /* Slightly lighter gray for the tagline */
+            margin-top: 0;
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .logo-container img {
+            max-width: 200px; /* Adjust size as needed */
+            height: auto;
+        }
+        .content-section {
+            display: flex;
+            flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+            justify-content: center;
+            align-items: stretch; /* Ensures columns stretch to same height */
+            flex-grow: 1; 
+        }
+        .column {
+            flex: 1; /* Each column takes equal available space */
+            min-width: 250px; /* Minimum width before wrapping */
+            padding: 30px;
+            text-align: center;
+            box-sizing: border-box; /* Include padding in the element's total width and height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        /* Column specific background colors matching the image */
+        .column:nth-child(1) { background-color: #C0E0F0; } /* Lighter blue */
+        .column:nth-child(2) { background-color: #A0D0E0; } /* Slightly darker blue */
+        .column:nth-child(3) { background-color: #80C0D0; } /* Medium blue */
+        .column:nth-child(4) { background-color: #60A0C0; } /* Darker blue */
+
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            .column {
+                flex-basis: 100%; /* Columns stack on top of each other */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-section">
+        
+        <h1>Disruptivators</h1>
+        <p>Disrupt. Rebuild. Rise — The Phoenix Way.</p>
+    </div>
+
+    <div class="content-section">
+        <div class="column">
+            Strategy Disruptivator
+        </div>
+        <div class="column">
+            Product Development Disruptivator
+        </div>
+        <div class="column">
+            Marketing Disruptivator
+        </div>
+        <div class="column">
+            Business Operations Disruptivator
+        </div>
+    </div>
+</body>
+</html>
